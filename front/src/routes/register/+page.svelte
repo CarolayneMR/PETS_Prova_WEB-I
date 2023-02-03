@@ -22,11 +22,13 @@
 <div class="img-fundo" />
 <body>
     <div class="box">
+        <h2>Register</h2>
         <form on:submit|preventDefault={createUser}>
             <input type="text" name="nome" id="nome" placeholder="Your name" required bind:value={nome}/>
             <input type="text" name="email" id="email" placeholder="Your email" required bind:value={email}/>
             <input type="password" name="senha" id="senha" placeholder="Your passward" required bind:value={senha}/>
-            <button>Register!</button>
+            <button>🐾 Register! 🐾</button>
+            <p>Have a account? <a href="login">Login in.</a></p>
         </form>
     </div>
 </body>
@@ -37,14 +39,41 @@
         font-size: 20px;
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
     }
+    p{
+        font-size: 13px;
+    }
+    input{
+        width: 200px;
+        height: 35px;
+        margin: 5px;
+        border: none;
+        border-radius: 5px;
+    }
+    button{
+        width: 150px;
+        height: 35px;
+        border: none;
+        color: white;
+        margin: 5px;
+        border-radius: 10px;
+        background-color: rgb(82, 72, 61);
+    }
+    body {
+        text-align: center;
+        font-size: 20px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        color: white;
+    }
     .box {
         width: 300px;
         margin: auto;
         margin-top: 250px;
         padding: 10px;
         background-color: rgba(86, 96, 64, 0.834);
-        border-radius: 5%;
-        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        border-radius: 40px;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+            rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     }
     .img-fundo {
         position: absolute;

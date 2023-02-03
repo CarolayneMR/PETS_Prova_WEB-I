@@ -35,6 +35,7 @@
     </div>
 </body>
 
+<div class="img-fundo"></div>
 <style>
     body {
         text-align: center;
